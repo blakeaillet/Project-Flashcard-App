@@ -21,7 +21,7 @@ function CreateDeck() {
       description: description,
     }).then((newDeck) => {
       console.log(newDeck);
-      history.push(`${newDeck.id}`);
+      history.push(`/${newDeck.id}`);
     })
     // console.log(name);
     // console.log(description);
