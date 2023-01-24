@@ -53,7 +53,7 @@ function AddCard({card}) {
       }
       await createCard(deckId, newCard, abortController.signal);
       // setCard({});
-      history.push(`/decks`);
+      history.push(`/decks/${deckId}`);
 };
 
 const onChangeFrontHandler = (e) => {
@@ -87,7 +87,7 @@ const onChangeBackHandler = (e) => {
       <h1>{`${deck.name}: Add Card`}</h1>
       <div className="card-info">
       <CardForm 
-          handleSubmit={submitHandler}
+          submitHandler={submitHandler}
           onChangeFrontHandler={onChangeFrontHandler}
           onChangeBackHandler={onChangeBackHandler}
           front={front}

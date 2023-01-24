@@ -11,7 +11,7 @@ function CardForm({ onChangeBackHandler, onChangeFrontHandler, submitHandler, fr
       
       <form onSubmit={submitHandler}>
         <div className="form-group">
-          <label for="front">Front</label>
+          <label htmlFor="front">Front</label>
           <textarea 
           type="text" 
           className="form-control" 
@@ -21,8 +21,8 @@ function CardForm({ onChangeBackHandler, onChangeFrontHandler, submitHandler, fr
           value={front}
           ></textarea>
         </div>
-        <div class="form-group">
-          <label for="back">Back</label>
+        <div className="form-group">
+          <label htmlFor="back">Back</label>
           <textarea 
           type="text" 
           className="form-control" 
@@ -32,9 +32,9 @@ function CardForm({ onChangeBackHandler, onChangeFrontHandler, submitHandler, fr
           value={back}
           ></textarea>
         </div>
+        <button type="button" className="btn btn-secondary mx-1" onClick={() => history.push(`/decks/${deckId}`)}>Done</button>
+        <button type="submit" className="btn btn-primary" >Save</button>
       </form>
-      <button type="button" className="btn btn-secondary mx-1" onClick={() => history.push(`/decks/${deckId}`)}>Done</button>
-      <button type="submit" className="btn btn-primary">Save</button>
     </div>
   )
 }
