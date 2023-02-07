@@ -53,6 +53,12 @@
       "back": "b",
       "deckId": 1,
       "id": 7
+    },
+    {
+      "front": "NEW",
+      "back": "BACK",
+      "deckId": 3,
+      "id": 8
     }
   ]
 }
