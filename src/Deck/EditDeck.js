@@ -41,7 +41,7 @@ function EditDeck() {
       ...deck, 
       name: name,
       description: description, 
-    }).then((newDeck) => history.push(`decks/${newDeck.id}`))
+    }).then((newDeck) => history.push(`/decks/${newDeck.id}`))
     //console.log(name);
     //console.log(description);
   }

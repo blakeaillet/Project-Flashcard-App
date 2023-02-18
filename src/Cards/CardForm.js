@@ -13,7 +13,8 @@ function CardForm({ onChangeBackHandler, onChangeFrontHandler, submitHandler, fr
         <div className="form-group">
           <label htmlFor="front">Front</label>
           <textarea 
-          type="text" 
+          type="text"
+          name="front" 
           className="form-control" 
           id="front" 
           placeholder="Front side of the card"
@@ -24,7 +25,8 @@ function CardForm({ onChangeBackHandler, onChangeFrontHandler, submitHandler, fr
         <div className="form-group">
           <label htmlFor="back">Back</label>
           <textarea 
-          type="text" 
+          type="text"
+          name="back" 
           className="form-control" 
           id="back" 
           placeholder="Back side of the card"

@@ -42,6 +42,9 @@ function EditCard() {
 };
   
   const onChangeHandler = (e) => {
+    console.log("name", e.target.name)
+    console.log("value", e.target.value)
+
     setCard({
     ...card,
     [e.target.name]: e.target.value,
