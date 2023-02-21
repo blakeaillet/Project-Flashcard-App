@@ -6,7 +6,7 @@ import CardForm from "./CardForm";
 function EditCard() {
   const [deck, setDeck] = useState({});
   const [card, setCard] = useState({});
-  const { deckId, cardId } = useParams();
+  const {deckId, cardId} = useParams();
   const history = useHistory();
 
   //pulls correct deck order to add cards
