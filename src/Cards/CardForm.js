@@ -1,15 +1,14 @@
 import React from "react";
-import { useHistory, useParams } from "react-router-dom";
+import { useHistory, } from "react-router-dom";
 
-function CardForm({ onChangeBackHandler, onChangeFrontHandler, submitHandler, front, back }) {
+function CardForm({ handleChange, handleSubmit, front, back, deck }) {
   const history = useHistory();
-  const { deckId } = useParams;
   
   return (
     <div>
       <h1>CardForm</h1>
       
-      <form onSubmit={submitHandler}>
+      <form onSubmit={handleSubmit}>
         <div className="form-group">
           <label htmlFor="front">Front</label>
           <textarea 
@@ -18,7 +17,7 @@ function CardForm({ onChangeBackHandler, onChangeFrontHandler, submitHandler, fr
           className="form-control" 
           id="front" 
           placeholder="Front side of the card"
-          onChange={onChangeFrontHandler}
+          onChange={handleChange}
           value={front}
           ></textarea>
         </div>
@@ -30,11 +29,11 @@ function CardForm({ onChangeBackHandler, onChangeFrontHandler, submitHandler, fr
           className="form-control" 
           id="back" 
           placeholder="Back side of the card"
-          onChange={onChangeBackHandler}
+          onChange={handleChange}
           value={back}
           ></textarea>
         </div>
-        <button type="button" className="btn btn-secondary mx-1" onClick={() => history.push(`/decks/${deckId}`)}>Done</button>
+        <button type="button" className="btn btn-secondary mx-1" onClick={() => history.push(`/decks/${deck.id}`)}>Done</button>
         <button type="submit" className="btn btn-primary" >Save</button>
       </form>
     </div>

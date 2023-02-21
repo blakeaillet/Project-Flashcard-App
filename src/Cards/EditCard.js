@@ -66,7 +66,7 @@ function EditCard() {
           front={card.front}
           back={card.back}
           deck={deck}
-          handleSubmit={submitHandler}
+          handleSubmit = {submitHandler}
           handleChange = {onChangeHandler}
           />
       </div>

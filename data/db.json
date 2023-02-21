@@ -16,8 +16,8 @@
       "id": 3
     },
     {
-      "name": "Blake33",
-      "description": "1",
+      "name": "Blake3",
+      "description": "deck",
       "id": 4
     },
     {
@@ -39,7 +39,7 @@
   "cards": [
     {
       "id": 1,
-      "front": "Differentiate between Real DOM and Virtual DOM.",
+      "front": "new3",
       "back": "Virtual DOM updates are faster but do not directly update the HTML",
       "deckId": 1
     },
@@ -79,6 +79,24 @@
       "back": "BACK",
       "deckId": 3,
       "id": 8
+    },
+    {
+      "front": "new edit",
+      "back": "new edit",
+      "deckId": 7,
+      "id": 9
+    },
+    {
+      "front": "2",
+      "back": "3",
+      "deckId": 4,
+      "id": 10
+    },
+    {
+      "front": "3",
+      "back": "4",
+      "deckId": 4,
+      "id": 11
     }
   ]
 }
